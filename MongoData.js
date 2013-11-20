@@ -6,9 +6,9 @@
 
 angular.module('elvenApp', ['pres'])
 .constant('CONFIG', {
-    DB_NAME: 'elvenlab01',
-    COLLECTION: 'address',
-    API_KEY: 'qfSxFoUGHBA1EuUlqhux_op2fy6oF_wy'
+    DB_NAME: 'prog270',
+    COLLECTION: 'Presidents',
+    API_KEY: 'mVioK7RiTicJ2u1wTH2OS9qxgspvQ8Es'
 })
 .controller('MyController', function($scope, $http, presidents) {
     $scope.hint = "<p>Start with <strong>node server.js</strong> to retrieve JSON from Server</p>";
@@ -94,7 +94,7 @@ angular.module('pres', ['ngResource'])
 	var Presidents = $resource(
         'https://api.mongolab.com/api/1/databases/' + CONFIG.DB_NAME + 
         '/collections/' + CONFIG.COLLECTION + '/:id', {      
-        apiKey: CONFIG.API_KEY     
+        apiKey: CONFIG.API_KEY    
     },
     {
         update: {method:'PUT'}

@@ -33,19 +33,19 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand" href="#">Donald Lee - Week 8 - MongoData</a>
+              <a class="navbar-brand" href="#">Donald Lee - Week 8 - MongoData </a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Pictures.html">Pictures</a></li>
-                <li class="active"><a href="About.html">About</a></li>
+                <li class="active"><a href="Pictures.html">Pictures</a></li>
+                <li><a href="About.html">About</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Pictures.html">Pictures</a></li>
-                    <li class="active"><a href="About.html">About</a></li>                    
+                    <li  ><a href="Pictures.html">Pictures</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>                    
                   </ul>
                 </li>
               </ul>
@@ -105,27 +105,35 @@
 		<div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      
-			<div id="monogoData" ng-controller="MyController">
-				
-					<p>This project retrieves a small amount of JSON from
-					a node server.</p>
-					<p>Rows in DB: {{presidentsLength}}</p>
-					<ul>
-						<li ng-repeat="president in presidents">
-							<p>{{president.getPresidentName()}}<br/>
-								TermStart: {{president.getTermStart()}}<br/>
-								TermEnd: {{president.getTermEnd()}}</p>
-						</li>
-					</ul>
-					<div ng-bind-html-unsafe="hint"></div>
-				</div>
-			</div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="Image140X140A.png" alt="Generic placeholder image">
+          <h2>A panaromic image of Baitou Mountain and Heaven Lake in China</h2>
+          <p><img alt="Baitou Mountain and Heaven Lake in China" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panorama_Himmelssee_3800px.jpg/800px-Panorama_Himmelssee_3800px.jpg" />
+          <p><a class="btn btn-default" href="About.html">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="Image140X140B.png" alt="Generic placeholder image">
+	      <h2>A panoramic photo of Jiqing Lou, one of the tulous in the Chuxi Tulou Cluster. Chuxi Village, Xiayang Town (下洋镇), Yongding County, Fujian 福建省文物保护单位</h2>
+		  <p><img alt="A panoramic photo of Jiqing Lou, one of the tulous in the Chuxi Tulou Cluster. Chuxi Village, Xiayang Town (下洋镇), Yongding County, Fujian 福建省文物保护单位" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/JiQingLouWide.jpg/800px-JiQingLouWide.jpg" />
+		  <p><a class="btn btn-default" href="About.html">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="Image140X140C.png" alt="Generic placeholder image">
+    		<h2>A crater lake at Tianchi (Heaven Lake, 天池) at Baitou (Chinese Changbai Shan) at the border of China and North Korea</h2>
+            <p><img alt="A crater lake at Tianchi (Heaven Lake, 天池) at Baitou (Chinese Changbai Shan) at the border of China and North Korea" src="http://upload.wikimedia.org/wikipedia/commons/6/6d/Baitou_Mountain_Tianchi.jpg" />
+			<p><a class="btn btn-default" href="About.html">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div>
+
+
+
 		
 			<!-- FOOTER -->
 			<footer>
 				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p>&copy; 2013 Donald Lee &middot; <a href="About.html">Privacy</a> &middot; <a href="About.html">Terms</a></p>
+				<p>&copy; 2013 Donald Lee &middot; <a href="Pictures.html">Privacy</a> &middot; <a href="Pictures.html">Terms</a></p>
 			</footer>
 
 		</div><!-- /.container -->
